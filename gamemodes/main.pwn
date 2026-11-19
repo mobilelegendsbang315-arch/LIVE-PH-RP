@@ -269,13 +269,13 @@ public OnAccountLogin(playerid)
         return 1;
     }
 
-    cache_get_value_name_int(0, "id", PlayerData[playerid][pID]);
-    cache_get_value_name_int(0, "admin", PlayerData[playerid][pAdmin]);
-    cache_get_value_name_int(0, "level", PlayerData[playerid][pLevel]);
-    cache_get_value_name_int(0, "money", PlayerData[playerid][pMoney]);
-    cache_get_value_name_int(0, "bank_money", PlayerData[playerid][pBankMoney]);
-    cache_get_value_name_int(0, "gang_id", PlayerData[playerid][pGang]);
-    cache_get_value_name_int(0, "org_id", PlayerData[playerid][pOrganization]);
+    cache_get_field_content_int(0, "id", PlayerData[playerid][pID]);
+cache_get_field_content_int(0, "admin", PlayerData[playerid][pAdmin]);
+cache_get_field_content_int(0, "level", PlayerData[playerid][pLevel]);
+cache_get_field_content_int(0, "money", PlayerData[playerid][pMoney]);
+cache_get_field_content_int(0, "bank_money", PlayerData[playerid][pBankMoney]);
+cache_get_field_content_int(0, "gang_id", PlayerData[playerid][pGang]);
+cache_get_field_content_int(0, "org_id", PlayerData[playerid][pOrganization]);
 
     PlayerData[playerid][pLoggedIn] = 1;
 
