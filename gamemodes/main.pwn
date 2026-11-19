@@ -27,7 +27,7 @@
 #define ADMIN_DEPUTY_FOUNDER 7
 #define ADMIN_FOUNDER 8
 
-new MySQL:g_SQL;
+new g_SQL;
 
 enum E_PLAYER_DATA
 {
